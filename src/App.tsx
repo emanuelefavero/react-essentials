@@ -1,5 +1,6 @@
 import './App.css'
 import image from './assets/react.svg'
+import Car from './components/Car'
 import Counter from './components/Counter'
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
 
       {/* Class Components */}
       <Counter initialValue={1} />
+
+      {/* useState prev values */}
+      <Car />
     </main>
   )
 }
