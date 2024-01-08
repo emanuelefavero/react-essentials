@@ -2,6 +2,8 @@ import './App.css'
 import image from './assets/react.svg'
 import Car from './components/Car'
 import Counter from './components/Counter'
+import User from './components/User'
+import { UserProvider } from './context/UserContext'
 
 function App() {
   return (
@@ -9,16 +11,21 @@ function App() {
       className='w-full h-full flex 
     justify-center items-center flex-col'
     >
-      <h1 className='text-violet-200 text-3xl'>Hello</h1>
-
       {/* Images */}
-      <img src={image} alt='react' />
+      <div>
+        <img src={image} alt='react' />
+      </div>
 
       {/* Class Components */}
       <Counter initialValue={1} />
 
       {/* useState prev values */}
       <Car />
+
+      {/* Context */}
+      <UserProvider>
+        <User />
+      </UserProvider>
     </main>
   )
 }

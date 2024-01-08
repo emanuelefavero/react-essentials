@@ -77,7 +77,7 @@ class Counter extends React.Component<CounterProps, CounterState> {
     return (
       <div>
         <h2>Counter</h2>
-        <p>{this.state.count}</p>
+        <p className='font-bold text-2xl text-pink-400'>{this.state.count}</p>
         <button onClick={this.incrementCount} className='bg-green-600 p-1'>
           Add
         </button>

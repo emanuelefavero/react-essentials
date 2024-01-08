@@ -24,7 +24,7 @@ export default function Car() {
   }
 
   return (
-    <>
+    <div>
       <h2>
         {car.brand} {car.model}
       </h2>
@@ -36,6 +36,6 @@ export default function Car() {
       >
         Change Color
       </button>
-    </>
+    </div>
   )
 }
