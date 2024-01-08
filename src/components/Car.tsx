@@ -1,7 +1,13 @@
 import { useState } from 'react'
 
+interface Car {
+  brand: string
+  model: string
+  color: 'red' | 'blue'
+}
+
 export default function Car() {
-  const [car, setCar] = useState({
+  const [car, setCar] = useState<Car>({
     brand: 'Toyota',
     model: 'Yaris',
     color: 'red',
