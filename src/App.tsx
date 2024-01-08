@@ -3,6 +3,7 @@ import image from './assets/react.svg'
 import Car from './components/Car'
 import Counter from './components/Counter'
 import User from './components/User'
+import Focus from './components/Focus'
 import { UserProvider } from './context/UserContext'
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
       <UserProvider>
         <User />
       </UserProvider>
+
+      {/* useRef */}
+      <Focus />
     </main>
   )
 }
