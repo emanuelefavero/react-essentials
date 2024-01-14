@@ -1,5 +1,6 @@
 import './App.css'
 import image from './assets/react.svg'
+import Hello from './components/Hello'
 import Car from './components/Car'
 import Counter from './components/Counter'
 import User from './components/User'
@@ -16,6 +17,9 @@ function App() {
       <div>
         <img src={image} alt='react' />
       </div>
+
+      {/* Style object */}
+      <Hello />
 
       {/* Class Components */}
       <Counter initialValue={1} />
