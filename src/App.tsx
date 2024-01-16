@@ -5,9 +5,15 @@ import Car from './components/Car'
 import Counter from './components/Counter'
 import User from './components/User'
 import Focus from './components/Focus'
+import Greet from './components/Greet'
 import { UserProvider } from './context/UserContext'
 
 function App() {
+  const message = {
+    text: 'Ciao',
+    from: 'React',
+  }
+
   return (
     <main
       className='w-full h-full flex 
@@ -34,6 +40,10 @@ function App() {
 
       {/* useRef */}
       <Focus />
+
+      {/* Spread Operator as Prop */}
+      <Greet {...message} />
+      {/* same as <Greet text={message.text} from={message.from} /> */}
     </main>
   )
 }
