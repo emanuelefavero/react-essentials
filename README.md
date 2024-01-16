@@ -10,3 +10,7 @@ This repository is a collection of React components, hooks, and utilities that d
 2. Run `npm install`
 3. Run `npm run dev`
 4. Open `http://localhost:5173/` in your browser
+
+## License
+
+- [MIT](LICENSE.md)
