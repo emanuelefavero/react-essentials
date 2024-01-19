@@ -7,8 +7,12 @@ import User from './components/User'
 import Focus from './components/Focus'
 import Greet from './components/Greet'
 import { UserProvider } from './context/UserContext'
+import useFetchOnClick from './hooks/useFetchOnClick'
 
 function App() {
+  // Custom hooks
+  const { data, loading, error, fetchData } = useFetchOnClick()
+
   const message = {
     text: 'Ciao',
     from: 'React',
@@ -44,6 +48,22 @@ function App() {
       {/* Spread Operator as Prop */}
       <Greet {...message} />
       {/* same as <Greet text={message.text} from={message.from} /> */}
+
+      {/* Custom hooks */}
+      {!data && (
+        <button
+          className='bg-indigo-600 text-white py-2 px-4'
+          onClick={() =>
+            fetchData('https://jsonplaceholder.typicode.com/users/1')
+          }
+        >
+          Fetch Data
+        </button>
+      )}
+
+      {loading && <p>Loading...</p>}
+      {error && <p>{error}</p>}
+      {data && <p>{data.name}</p>}
     </main>
   )
 }
