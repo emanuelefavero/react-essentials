@@ -8,6 +8,7 @@ import Focus from './components/Focus'
 import Greet from './components/Greet'
 import { UserProvider } from './context/UserContext'
 import useFetchOnClick from './hooks/useFetchOnClick'
+import PrimaryButton from './components/PrimaryButton'
 
 function App() {
   // Custom hooks
@@ -49,16 +50,17 @@ function App() {
       <Greet {...message} />
       {/* same as <Greet text={message.text} from={message.from} /> */}
 
-      {/* Custom hooks */}
+      {/* Custom hooks and custom style component that takes children */}
       {!data && (
-        <button
-          className='bg-indigo-600 text-white py-2 px-4'
-          onClick={() =>
-            fetchData('https://jsonplaceholder.typicode.com/users/1')
+        // Custom style component that takes children
+        <PrimaryButton
+          onClick={
+            // Custom hook
+            () => fetchData('https://jsonplaceholder.typicode.com/users/1')
           }
         >
           Fetch Data
-        </button>
+        </PrimaryButton>
       )}
 
       {loading && <p>Loading...</p>}

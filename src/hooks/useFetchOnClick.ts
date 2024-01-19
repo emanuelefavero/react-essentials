@@ -1,7 +1,14 @@
 import { useState } from 'react'
 
 interface Data {
+  id: number
   name: string
+  username: string
+  email: string
+  address: {
+    street: string
+    city: string
+  }
 }
 
 export default function useFetchOnClick() {
