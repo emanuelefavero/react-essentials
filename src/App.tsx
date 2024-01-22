@@ -9,6 +9,7 @@ import Greet from './components/Greet'
 import { UserProvider } from './context/UserContext'
 import useFetchOnClick from './hooks/useFetchOnClick'
 import PrimaryButton from './components/PrimaryButton'
+import OffCanvas from './components/Offcanvas'
 
 function App() {
   // Custom hooks
@@ -66,6 +67,9 @@ function App() {
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {data && <p>{data.name}</p>}
+
+      {/* OffCanvas */}
+      <OffCanvas />
     </main>
   )
 }
