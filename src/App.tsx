@@ -12,6 +12,7 @@ import PrimaryButton from './components/PrimaryButton'
 import OffCanvas from './components/OffCanvas'
 import CounterReducer from './components/CounterReducer'
 import CounterCallback from './components/CounterCallback'
+import CounterMemo from './components/CounterMemo'
 
 function App() {
   // Custom hooks
@@ -78,6 +79,9 @@ function App() {
 
       {/* CounterCallback */}
       <CounterCallback />
+
+      {/* CounterMemo */}
+      <CounterMemo />
     </main>
   )
 }
