@@ -9,7 +9,8 @@ import Greet from './components/Greet'
 import { UserProvider } from './context/UserContext'
 import useFetchOnClick from './hooks/useFetchOnClick'
 import PrimaryButton from './components/PrimaryButton'
-import OffCanvas from './components/Offcanvas'
+import OffCanvas from './components/OffCanvas'
+import CounterReducer from './components/CounterReducer'
 
 function App() {
   // Custom hooks
@@ -70,6 +71,9 @@ function App() {
 
       {/* OffCanvas */}
       <OffCanvas />
+
+      {/* CounterReducer */}
+      <CounterReducer />
     </main>
   )
 }
