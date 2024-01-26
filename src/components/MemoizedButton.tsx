@@ -4,6 +4,9 @@ interface Props {
   increment: () => void
 }
 
+// TIP: memo is used to prevent unnecessary re-renders of a component
+// Memoize the button so that it is only created once
+
 export default memo(function MemoizedButton({ increment }: Props) {
   console.log('rendering MemoizedButton')
 
