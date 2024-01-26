@@ -13,6 +13,7 @@ import OffCanvas from './components/OffCanvas'
 import CounterUseReducer from './components/CounterUseReducer'
 import CounterUseCallback from './components/CounterUseCallback'
 import CounterUseMemo from './components/CounterUseMemo'
+import CounterMemo from './components/CounterMemo'
 
 function App() {
   // Custom hooks
@@ -82,6 +83,9 @@ function App() {
 
       {/* Counter useMemo */}
       <CounterUseMemo />
+
+      {/* Counter Memo */}
+      <CounterMemo />
     </main>
   )
 }
