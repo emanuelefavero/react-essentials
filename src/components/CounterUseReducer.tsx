@@ -3,7 +3,7 @@ import { counterReducer } from '../reducers/counterReducer'
 
 // TIP: This counter uses a reducer to manage state
 
-export default function CounterReducer() {
+export default function CounterUseReducer() {
   const [state, dispatch] = useReducer(counterReducer, 0)
 
   const buttonStyle =
@@ -11,7 +11,7 @@ export default function CounterReducer() {
 
   return (
     <div className='flex justify-center items-center'>
-      <h1 className='mr-2'>CounterReducer: </h1>
+      <h1 className='mr-2'>Counter useReducer: </h1>
       <p className='text-3xl mr-2 text-indigo-300'>{state}</p>
       <button
         onClick={() => dispatch({ type: 'INCREMENT' })}

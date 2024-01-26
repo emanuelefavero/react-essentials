@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react'
 
-export default function CounterCallback() {
+export default function CounterUseCallback() {
   const [count, setCount] = useState(0)
 
   // TIP: useCallback is used to prevent unnecessary re-renders
@@ -14,7 +14,7 @@ export default function CounterCallback() {
 
   return (
     <>
-      <h2>CounterCallback</h2>
+      <h2>Counter useCallback</h2>
       <p className='text-3xl'>{count}</p>
       <button onClick={increment} className={`${buttonStyle}`}>
         Increment

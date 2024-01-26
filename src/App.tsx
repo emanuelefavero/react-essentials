@@ -10,9 +10,9 @@ import { UserProvider } from './context/UserContext'
 import useFetchOnClick from './hooks/useFetchOnClick'
 import PrimaryButton from './components/PrimaryButton'
 import OffCanvas from './components/OffCanvas'
-import CounterReducer from './components/CounterReducer'
-import CounterCallback from './components/CounterCallback'
-import CounterMemo from './components/CounterMemo'
+import CounterUseReducer from './components/CounterUseReducer'
+import CounterUseCallback from './components/CounterUseCallback'
+import CounterUseMemo from './components/CounterUseMemo'
 
 function App() {
   // Custom hooks
@@ -74,14 +74,14 @@ function App() {
       {/* OffCanvas */}
       <OffCanvas />
 
-      {/* CounterReducer */}
-      <CounterReducer />
+      {/* Counter useReducer */}
+      <CounterUseReducer />
 
-      {/* CounterCallback */}
-      <CounterCallback />
+      {/* Counter useCallback */}
+      <CounterUseCallback />
 
-      {/* CounterMemo */}
-      <CounterMemo />
+      {/* Counter useMemo */}
+      <CounterUseMemo />
     </main>
   )
 }

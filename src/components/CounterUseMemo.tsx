@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 
-export default function CounterMemo() {
+export default function CounterUseMemo() {
   const [count, setCount] = useState(1)
 
   // TIP: useMemo is used to prevent unnecessary re-renders
@@ -15,7 +15,7 @@ export default function CounterMemo() {
 
   return (
     <>
-      <h2>CounterMemo</h2>
+      <h2>Counter useMemo</h2>
       <p className='text-3xl'>
         {count} is {isEven ? 'Even' : 'Odd'}
       </p>
