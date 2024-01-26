@@ -11,6 +11,7 @@ import useFetchOnClick from './hooks/useFetchOnClick'
 import PrimaryButton from './components/PrimaryButton'
 import OffCanvas from './components/OffCanvas'
 import CounterReducer from './components/CounterReducer'
+import CounterCallback from './components/CounterCallback'
 
 function App() {
   // Custom hooks
@@ -74,6 +75,9 @@ function App() {
 
       {/* CounterReducer */}
       <CounterReducer />
+
+      {/* CounterCallback */}
+      <CounterCallback />
     </main>
   )
 }
