@@ -14,6 +14,7 @@ import CounterUseReducer from './components/CounterUseReducer'
 import CounterUseCallback from './components/CounterUseCallback'
 import CounterUseMemo from './components/CounterUseMemo'
 import CounterMemo from './components/CounterMemo'
+import Id from './components/Id'
 
 function App() {
   // Custom hooks
@@ -86,6 +87,9 @@ function App() {
 
       {/* Counter Memo */}
       <CounterMemo />
+
+      {/* Id */}
+      <Id />
     </main>
   )
 }
