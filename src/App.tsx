@@ -15,6 +15,7 @@ import CounterUseCallback from './components/CounterUseCallback'
 import CounterUseMemo from './components/CounterUseMemo'
 import CounterMemo from './components/CounterMemo'
 import Id from './components/Id'
+import Dialog from './components/Dialog'
 
 function App() {
   // Custom hooks
@@ -90,6 +91,9 @@ function App() {
 
       {/* Id */}
       <Id />
+
+      {/* Dialog */}
+      <Dialog />
     </main>
   )
 }

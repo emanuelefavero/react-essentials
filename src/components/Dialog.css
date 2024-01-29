@@ -1,0 +1,44 @@
+dialog {
+  /* POSITION */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* SIZE */
+  padding: 1rem;
+  width: 250px;
+  height: 150px;
+
+  /* FLEX */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* STYLE */
+  background-color: rgb(231, 229, 239);
+  color: rgb(22, 22, 25);
+  border-radius: 0.4rem;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 0px 2px rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+
+  /* ANIMATION */
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
