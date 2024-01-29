@@ -1,4 +1,23 @@
+/* * OVERLAY * */
+.overlay {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Darken the background */
+  backdrop-filter: blur(6px); /* Apply a blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it's above other page content but below the dialog */
+}
+
+/* * DIALOG * */
 dialog {
+  z-index: 20; /* Ensure it's above the overlay */
+
   /* POSITION */
   position: fixed;
   top: 50%;

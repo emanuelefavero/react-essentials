@@ -24,17 +24,19 @@ export default function DialogComponent() {
 
       {showDialog && (
         // * DIALOG
-        <dialog>
-          Hello
-          <button
-            onClick={() => {
-              setShowDialog(false)
-            }}
-            className={closeDialogButtonStyle}
-          >
-            Close
-          </button>
-        </dialog>
+        <div className='overlay' onClick={() => setShowDialog(false)}>
+          <dialog>
+            Hello
+            <button
+              onClick={() => {
+                setShowDialog(false)
+              }}
+              className={closeDialogButtonStyle}
+            >
+              Close
+            </button>
+          </dialog>
+        </div>
       )}
     </>
   )
