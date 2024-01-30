@@ -16,6 +16,7 @@ import CounterUseMemo from './components/CounterUseMemo'
 import CounterMemo from './components/CounterMemo'
 import Id from './components/Id'
 import Dialog from './components/Dialog'
+import HOC from './components/HOC'
 
 function App() {
   // Custom hooks
@@ -94,6 +95,9 @@ function App() {
 
       {/* Dialog */}
       <Dialog />
+
+      {/* HOC - High Order Components */}
+      <HOC />
     </main>
   )
 }
