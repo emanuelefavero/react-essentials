@@ -17,6 +17,7 @@ import CounterMemo from './components/CounterMemo'
 import Id from './components/Id'
 import Dialog from './components/Dialog'
 import HOC from './components/HOC'
+import Portal from './components/Portal'
 
 function App() {
   // Custom hooks
@@ -98,6 +99,9 @@ function App() {
 
       {/* HOC - High Order Components */}
       <HOC />
+
+      {/* createPortal method */}
+      <Portal />
     </main>
   )
 }
