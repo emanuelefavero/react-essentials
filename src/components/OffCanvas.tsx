@@ -29,10 +29,10 @@ export default function OffCanvas() {
       <div className='py-4'>
         {/* Button to open the off canvas */}
         <button
-          onClick={() => setShow(!show)}
+          onClick={() => setShow(true)}
           className='bg-purple-600 hover:bg-purple-700 text-white py-2 px-4'
         >
-          {show ? 'Close Off Canvas' : 'Open Off Canvas'}
+          Open Off Canvas
         </button>
 
         {/* Off Canvas */}
