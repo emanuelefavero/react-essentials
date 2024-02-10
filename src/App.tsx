@@ -19,6 +19,7 @@ import Dialog from './components/Dialog'
 import HOC from './components/HOC'
 import Portal from './components/Portal'
 import List from './components/List'
+import Autocomplete from './components/Autocomplete'
 
 function App() {
   // Custom hooks
@@ -30,83 +31,92 @@ function App() {
   }
 
   return (
-    <main
-      className='w-full h-full flex 
+    <>
+      <header className='pt-20'></header>
+
+      <main
+        className='w-full h-full flex 
     justify-center items-center flex-col'
-    >
-      {/* Images */}
-      <div>
-        <img src={image} alt='react' />
-      </div>
+      >
+        {/* Images */}
+        <div>
+          <img src={image} alt='react' />
+        </div>
 
-      {/* Style object */}
-      <Hello />
+        {/* Style object */}
+        <Hello />
 
-      {/* Class Components */}
-      <Counter initialValue={1} />
+        {/* Class Components */}
+        <Counter initialValue={1} />
 
-      {/* useState prev values */}
-      <Car />
+        {/* useState prev values */}
+        <Car />
 
-      {/* Context */}
-      <UserProvider>
-        <User />
-      </UserProvider>
+        {/* Context */}
+        <UserProvider>
+          <User />
+        </UserProvider>
 
-      {/* useRef */}
-      <Focus />
+        {/* useRef */}
+        <Focus />
 
-      {/* Spread Operator as Prop */}
-      <Greet {...message} />
-      {/* same as <Greet text={message.text} from={message.from} /> */}
+        {/* Spread Operator as Prop */}
+        <Greet {...message} />
+        {/* same as <Greet text={message.text} from={message.from} /> */}
 
-      {/* Custom hooks and custom style component that takes children */}
-      {!data && (
-        // Custom style component that takes children
-        <PrimaryButton
-          onClick={
-            // Custom hook
-            () => fetchData('https://jsonplaceholder.typicode.com/users/1')
-          }
-        >
-          Fetch Data
-        </PrimaryButton>
-      )}
+        {/* Custom hooks and custom style component that takes children */}
+        {!data && (
+          // Custom style component that takes children
+          <PrimaryButton
+            onClick={
+              // Custom hook
+              () => fetchData('https://jsonplaceholder.typicode.com/users/1')
+            }
+          >
+            Fetch Data
+          </PrimaryButton>
+        )}
 
-      {loading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
-      {data && <p>{data.name}</p>}
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        {data && <p>{data.name}</p>}
 
-      {/* OffCanvas */}
-      <OffCanvas />
+        {/* OffCanvas */}
+        <OffCanvas />
 
-      {/* Counter useReducer */}
-      <CounterUseReducer />
+        {/* Counter useReducer */}
+        <CounterUseReducer />
 
-      {/* Counter useCallback */}
-      <CounterUseCallback />
+        {/* Counter useCallback */}
+        <CounterUseCallback />
 
-      {/* Counter useMemo */}
-      <CounterUseMemo />
+        {/* Counter useMemo */}
+        <CounterUseMemo />
 
-      {/* Counter Memo */}
-      <CounterMemo />
+        {/* Counter Memo */}
+        <CounterMemo />
 
-      {/* Id */}
-      <Id />
+        {/* Id */}
+        <Id />
 
-      {/* Dialog */}
-      <Dialog />
+        {/* Dialog */}
+        <Dialog />
 
-      {/* HOC - High Order Components */}
-      <HOC />
+        {/* HOC - High Order Components */}
+        <HOC />
 
-      {/* createPortal method */}
-      <Portal />
+        {/* createPortal method */}
+        <Portal />
 
-      {/* List */}
-      <List />
-    </main>
+        {/* List */}
+        <List />
+
+        {/* Autocomplete */}
+        <Autocomplete />
+      </main>
+
+      <footer className='pb-20'></footer>
+    </>
   )
 }
 
