@@ -18,6 +18,7 @@ import Id from './components/Id'
 import Dialog from './components/Dialog'
 import HOC from './components/HOC'
 import Portal from './components/Portal'
+import RemoveItemFromList from './components/RemoveItemFromList'
 
 function App() {
   // Custom hooks
@@ -102,6 +103,9 @@ function App() {
 
       {/* createPortal method */}
       <Portal />
+
+      {/* Remove item from list */}
+      <RemoveItemFromList />
     </main>
   )
 }
