@@ -1,4 +1,5 @@
 import './App.css'
+import Card from './components/common/Card'
 import image from './assets/react.svg'
 import Hello from './components/Hello'
 import Car from './components/Car'
@@ -44,75 +45,109 @@ function App() {
         </div>
 
         {/* Style object */}
-        <Hello />
+        <Card>
+          <Hello />
+        </Card>
 
         {/* Class Components */}
-        <Counter initialValue={1} />
+        <Card>
+          <Counter initialValue={1} />
+        </Card>
 
         {/* useState prev values */}
-        <Car />
+        <Card>
+          <Car />
+        </Card>
 
         {/* Context */}
-        <UserProvider>
-          <User />
-        </UserProvider>
+        <Card>
+          <UserProvider>
+            <User />
+          </UserProvider>
+        </Card>
 
         {/* useRef */}
-        <Focus />
+        <Card>
+          <Focus />
+        </Card>
 
         {/* Spread Operator as Prop */}
-        <Greet {...message} />
+        <Card>
+          <Greet {...message} />
+        </Card>
         {/* same as <Greet text={message.text} from={message.from} /> */}
 
         {/* Custom hooks and custom style component that takes children */}
-        {!data && (
-          // Custom style component that takes children
-          <PrimaryButton
-            onClick={
-              // Custom hook
-              () => fetchData('https://jsonplaceholder.typicode.com/users/1')
-            }
-          >
-            Fetch Data
-          </PrimaryButton>
-        )}
+        <Card>
+          {!data && (
+            // Custom style component that takes children
+            <PrimaryButton
+              onClick={
+                // Custom hook
+                () => fetchData('https://jsonplaceholder.typicode.com/users/1')
+              }
+            >
+              Fetch Data
+            </PrimaryButton>
+          )}
 
-        {loading && <p>Loading...</p>}
-        {error && <p>{error}</p>}
-        {data && <p>{data.name}</p>}
+          {loading && <p>Loading...</p>}
+          {error && <p>{error}</p>}
+          {data && <p>{data.name}</p>}
+        </Card>
 
         {/* OffCanvas */}
-        <OffCanvas />
+        <Card>
+          <OffCanvas />
+        </Card>
 
         {/* Counter useReducer */}
-        <CounterUseReducer />
+        <Card>
+          <CounterUseReducer />
+        </Card>
 
         {/* Counter useCallback */}
-        <CounterUseCallback />
+        <Card>
+          <CounterUseCallback />
+        </Card>
 
         {/* Counter useMemo */}
-        <CounterUseMemo />
+        <Card>
+          <CounterUseMemo />
+        </Card>
 
         {/* Counter Memo */}
-        <CounterMemo />
+        <Card>
+          <CounterMemo />
+        </Card>
 
         {/* Id */}
-        <Id />
+        <Card>
+          <Id />
+        </Card>
 
         {/* Dialog */}
-        <Dialog />
+        <Card>
+          <Dialog />
+        </Card>
 
         {/* HOC - High Order Components */}
-        <HOC />
+        <Card>
+          <HOC />
+        </Card>
 
         {/* createPortal method */}
         <Portal />
 
         {/* List */}
-        <List />
+        <Card>
+          <List />
+        </Card>
 
         {/* Autocomplete */}
-        <Autocomplete />
+        <Card>
+          <Autocomplete />
+        </Card>
       </main>
 
       <footer className='pb-20'></footer>
