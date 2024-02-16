@@ -48,6 +48,7 @@ export default function RemoveItemFromList() {
           <li key={index} className='mb-2'>
             {item}
             <button
+              data-testid='list-remove-item-button'
               className='bg-rose-600 text-white ml-2 px-1 py-1'
               onClick={() => removeItem(index)}
             >
