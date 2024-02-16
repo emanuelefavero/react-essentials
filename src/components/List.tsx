@@ -5,7 +5,7 @@ export default function RemoveItemFromList() {
   const [newItem, setNewItem] = useState('')
 
   const addItem = () => {
-    if (newItem) {
+    if (newItem.trim()) {
       setItems([...items, newItem])
       setNewItem('')
     } else {
