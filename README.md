@@ -27,6 +27,16 @@ npx cypress open
 
 > In the Cypress window, click on "E2E Testing", "Start E2E Testing in Chrome" then click on the test that you want to run
 
+## Resources
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Jest](https://jestjs.io/)
+- [Testing Library](https://testing-library.com/)
+- [Cypress](https://www.cypress.io/)
+
+> Cypress is a great tool for end-to-end testing
+
 ## License
 
 - [MIT](LICENSE.md)
