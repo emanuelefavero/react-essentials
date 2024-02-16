@@ -10,7 +10,7 @@ export default function Hello() {
   const helloTailwindStyle = 'font-bold'
 
   return (
-    <h1 className={helloTailwindStyle} style={helloStyle}>
+    <h1 data-testid='hello' className={helloTailwindStyle} style={helloStyle}>
       Hello
     </h1>
   )
