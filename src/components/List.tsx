@@ -23,6 +23,7 @@ export default function RemoveItemFromList() {
 
       {/* Add new item */}
       <form
+        data-testid='list-form'
         className='mb-4'
         onSubmit={(e) => {
           e.preventDefault()
@@ -30,6 +31,7 @@ export default function RemoveItemFromList() {
         }}
       >
         <input
+          data-testid='list-input'
           className='text-slate-600 px-2 py-1 mr-2 focus:ring-2 focus:ring-fuchsia-600 focus:border-transparent'
           type='text'
           placeholder='new item...'
@@ -41,7 +43,7 @@ export default function RemoveItemFromList() {
         </button>
       </form>
 
-      <ul>
+      <ul data-testid='list'>
         {items.map((item, index) => (
           <li key={index} className='mb-2'>
             {item}
