@@ -10,7 +10,7 @@ describe('Todo List Tests', () => {
 
     // Add a new item
     cy.get('[data-testid="list-input').type('New Item')
-    cy.get('form').submit()
+    cy.get('[data-testid="list-form"]').submit()
 
     // Check if the new item was added
     cy.get('[data-testid="list"]').find('li').should('have.length', 4)
@@ -34,5 +34,15 @@ describe('Todo List Tests', () => {
 
     // Check if the first item was removed
     cy.get('[data-testid="list"]').find('li').should('have.length', 2)
+  })
+
+  // * PREVENT ADDING EMPTY ITEM
+  it('should prevent adding an empty item to the list', () => {
+    // Attempt to add an empty item
+    cy.get('[data-testid="list-input').type(' ')
+    cy.get('[data-testid="list-form"]').submit()
+
+    // Check if the empty item was not added
+    cy.get('[data-testid="list"]').find('li').should('have.length', 3)
   })
 })
