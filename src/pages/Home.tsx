@@ -48,6 +48,8 @@ export default function Home() {
         className='w-full h-full flex 
     justify-center items-center flex-col'
       >
+        <h1 className='text-4xl font-bold mb-10'>Home</h1>
+
         {/* Images */}
         <div>
           <img src={image} alt='react' />
