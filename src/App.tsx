@@ -21,6 +21,7 @@ import HOC from './components/HOC'
 import Portal from './components/Portal'
 import List from './components/List'
 import Autocomplete from './components/Autocomplete'
+import ListWithCustomHook from './components/ListWithCustomHook'
 
 function App() {
   // Custom hooks
@@ -147,6 +148,11 @@ function App() {
         {/* Autocomplete */}
         <Card>
           <Autocomplete />
+        </Card>
+
+        {/* List with Custom Hook */}
+        <Card>
+          <ListWithCustomHook />
         </Card>
       </main>
 
