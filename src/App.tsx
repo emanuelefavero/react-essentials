@@ -23,6 +23,7 @@ import List from './components/List'
 import Autocomplete from './components/Autocomplete'
 import ListWithCustomHook from './components/ListWithCustomHook'
 import UseTransitionHook from './components/UseTransitionHook'
+import LazyLoading from './components/LazyLoading'
 
 function App() {
   // Custom hooks
@@ -159,6 +160,11 @@ function App() {
         {/* useTransition Hook */}
         <Card>
           <UseTransitionHook />
+        </Card>
+
+        {/* Lazy Loading */}
+        <Card>
+          <LazyLoading />
         </Card>
       </main>
 
