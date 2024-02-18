@@ -22,6 +22,7 @@ import Portal from './components/Portal'
 import List from './components/List'
 import Autocomplete from './components/Autocomplete'
 import ListWithCustomHook from './components/ListWithCustomHook'
+import UseTransitionHook from './components/UseTransitionHook'
 
 function App() {
   // Custom hooks
@@ -153,6 +154,11 @@ function App() {
         {/* List with Custom Hook */}
         <Card>
           <ListWithCustomHook />
+        </Card>
+
+        {/* useTransition Hook */}
+        <Card>
+          <UseTransitionHook />
         </Card>
       </main>
 
