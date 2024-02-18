@@ -1,3 +1,8 @@
+// * IMPORTS
+// * Libraries
+import { Link } from 'react-router-dom'
+
+// * Components
 import Card from '../components/common/Card'
 import image from '../assets/react.svg'
 import Hello from '../components/Hello'
@@ -24,6 +29,7 @@ import ListWithCustomHook from '../components/ListWithCustomHook'
 import UseTransitionHook from '../components/UseTransitionHook'
 import LazyLoading from '../components/LazyLoading'
 
+// * COMPONENT
 export default function Home() {
   // Custom hooks
   const { data, loading, error, fetchData } = useFetchOnClick()
@@ -33,6 +39,7 @@ export default function Home() {
     from: 'React',
   }
 
+  // * RENDER
   return (
     <>
       <header className='pt-20'></header>
@@ -164,6 +171,13 @@ export default function Home() {
         {/* Lazy Loading */}
         <Card>
           <LazyLoading />
+        </Card>
+
+        {/* React Router Blog */}
+        <Card>
+          <Link to='/blog' className='text-cyan-400'>
+            Go To → React Router Blog
+          </Link>
         </Card>
       </main>
 
