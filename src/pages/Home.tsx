@@ -181,6 +181,13 @@ export default function Home() {
             Go To → React Router Blog
           </Link>
         </Card>
+
+        {/* Secret Route */}
+        <Card>
+          <Link to='/secret' className='text-cyan-400'>
+            Go To → Secret Route
+          </Link>
+        </Card>
       </main>
 
       <footer className='pb-20'></footer>
