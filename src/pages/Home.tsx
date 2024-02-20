@@ -28,6 +28,7 @@ import Autocomplete from '../components/Autocomplete'
 import ListWithCustomHook from '../components/ListWithCustomHook'
 import UseTransitionHook from '../components/UseTransitionHook'
 import LazyLoading from '../components/LazyLoading'
+import ZustandCounter from '../components/ZustandCounter'
 
 // * COMPONENT
 export default function Home() {
@@ -187,6 +188,11 @@ export default function Home() {
           <Link to='/secret' className='text-cyan-400'>
             Go To → Secret Route
           </Link>
+        </Card>
+
+        {/* Zustand Counter */}
+        <Card>
+          <ZustandCounter />
         </Card>
       </main>
 
