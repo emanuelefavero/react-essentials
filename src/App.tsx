@@ -5,6 +5,7 @@ import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import ProtectedRoute from './components/ProtectedRoute'
 import Secret from './pages/Secret'
+import NotFound from './pages/NotFound'
 
 const router = createBrowserRouter([
   // * HOME
@@ -33,6 +34,12 @@ const router = createBrowserRouter([
         element: <Secret />,
       },
     ],
+  },
+
+  // * 404
+  {
+    path: '*',
+    element: <NotFound />,
   },
 ])
 

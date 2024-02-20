@@ -6,7 +6,7 @@ export default function Secret() {
       <Link to='/' className='text-cyan-400'>
         Go back to Home
       </Link>
-      <h2 className='text-2xl text-green-400 font-bold'>Secret Page!</h2>
+      <h1 className='text-2xl text-green-400 font-bold'>Secret Page!</h1>
       <p className='max-w-sm'>
         Change <span className='text-purple-400'>isAuthenticated</span> to{' '}
         <span className='text-rose-400'>false</span> in{' '}
