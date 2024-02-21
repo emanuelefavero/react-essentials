@@ -1,0 +1,30 @@
+/* Hide the radio input visually */
+.star-rating input[type='radio'] {
+  display: none;
+}
+
+/* Style the labels to display stars, defaulting to gray */
+.star-rating label {
+  cursor: pointer;
+  font-size: 2rem; /* Adjust size of stars */
+  color: gray; /* Default star color */
+}
+
+/* Change color of the star and all previous stars to gold when hovered over */
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type='radio']:checked ~ label {
+  color: gold; /* Chosen star color */
+}
+
+/* This reverses the document flow for the labels, so we can utilize the sibling combinator effectively */
+/* .star-rating {
+  display: flex;
+  justify-content: flex-end;
+  direction: rtl;
+} */
+
+/* Adjust label order for correct hover behavior */
+.star-rating label {
+  direction: ltr;
+}

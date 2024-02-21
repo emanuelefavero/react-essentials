@@ -29,6 +29,7 @@ import ListWithCustomHook from '../components/ListWithCustomHook'
 import UseTransitionHook from '../components/UseTransitionHook'
 import LazyLoading from '../components/LazyLoading'
 import ZustandCounter from '../components/ZustandCounter'
+import StarRating from '../components/StarRating'
 
 // * COMPONENT
 export default function Home() {
@@ -193,6 +194,11 @@ export default function Home() {
         {/* Zustand Counter */}
         <Card>
           <ZustandCounter />
+        </Card>
+
+        {/* Star Rating */}
+        <Card>
+          <StarRating />
         </Card>
       </main>
 
